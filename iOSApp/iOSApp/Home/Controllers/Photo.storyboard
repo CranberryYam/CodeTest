@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Photo Controller-->
+        <scene sceneID="VjP-of-WRh">
+            <objects>
+                <viewController storyboardIdentifier="Photo" id="Hpp-dr-0OG" customClass="PhotoController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xow-rM-byG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ThumbNail" translatesAutoresizingMaskIntoConstraints="NO" id="P75-91-hC6">
+                                <rect key="frame" x="0.0" y="156" width="375" height="375"/>
+                                <color key="backgroundColor" red="0.50584027149999999" green="0.71147974059999997" blue="0.72816695360000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="P75-91-hC6" secondAttribute="height" multiplier="1:1" id="hMj-Us-6Ld"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="P75-91-hC6" firstAttribute="centerY" secondItem="Nxj-Tq-pbQ" secondAttribute="centerY" id="T1U-aQ-b5F"/>
+                            <constraint firstItem="P75-91-hC6" firstAttribute="leading" secondItem="Nxj-Tq-pbQ" secondAttribute="leading" id="gST-kq-Tvb"/>
+                            <constraint firstItem="P75-91-hC6" firstAttribute="trailing" secondItem="Nxj-Tq-pbQ" secondAttribute="trailing" id="w9h-Fj-gO6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Nxj-Tq-pbQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageV" destination="P75-91-hC6" id="nSy-4U-mbm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Upm-pD-N19" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="204" y="86.806596701649184"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ThumbNail" width="150" height="150"/>
+    </resources>
+</document>
