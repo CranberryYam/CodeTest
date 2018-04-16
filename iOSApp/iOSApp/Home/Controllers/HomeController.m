@@ -12,12 +12,11 @@
 #import "Post.h"
 #import "PostCell.h"
 #import "HYCache.h"
-#import "HYPhotoBrowserAnimator.h"
 
 static NSString *const postCellID = @"PostCell";
 static CGFloat const postCellHeight = (CGFloat)70.0;
 
-@interface HomeController () <photoBrowserAnimatorPresentDelegate>
+@interface HomeController () 
 @property (nonatomic, strong) FeedClient *client;
 @property (nonatomic, strong) NSMutableArray *posts;
 @end
